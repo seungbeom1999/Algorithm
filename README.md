@@ -1,2 +1,12 @@
 # Algorithm
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
+
+코딩 테스트 및 문제 오답노트 모음집
+
+[문제 풀이 방법]
+-> 해결한 과정 및 풀이 방법
+
+[오답노트]
+-> 어디에서 잘못 되었나 혹은 풀이 노트 확인
+
+[최적화 작업]
+-> 최적화
