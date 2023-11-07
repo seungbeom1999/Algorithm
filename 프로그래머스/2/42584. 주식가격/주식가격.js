@@ -1,15 +1,15 @@
 function solution(prices) {
-    const n = prices.length;
-    const answer = new Array(n).fill(0);
-
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = i + 1; j < n; j++) {
-            answer[i]++;
-            if (prices[i] > prices[j]) {
-                break;
-            }
-        }
+  const result = [];
+  for (let i = 0; i < prices.length; i++) {
+    let time = 0; 
+    for (let j = i + 1; j < prices.length; j++) {
+      time++;
+      if (prices[i] > prices[j]) {
+        break;
+      }
     }
+    result.push(time); 
+  }
 
-    return answer;
+  return result;
 }
