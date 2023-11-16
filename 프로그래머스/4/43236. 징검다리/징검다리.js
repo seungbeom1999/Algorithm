@@ -1,4 +1,5 @@
 function solution(distance, rocks, n) {
+    if(rocks.length === n) return distance
   rocks=[0,...rocks.sort((a,b)=>a-b),distance]
   let answer = [];
   let start = 0;
@@ -19,11 +20,10 @@ function solution(distance, rocks, n) {
     
     if(remove > n) {
       end = mid-1;
-      // answer.push(end)
+      answer.push(mid-1)
     } else {
       start = mid+1;
-      answer.push(mid)
     }
   }
-  return Math.max(...answer);
+  return Math.min(...answer);
 }
